@@ -1,0 +1,4 @@
+-------------UC1----------------
+
+CREATE DATABASE EMP_PAYROLL_SERVICE;
+USE EMP_PAYROLL_SERVICE;
