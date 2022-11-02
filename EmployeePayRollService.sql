@@ -69,3 +69,8 @@ INSERT INTO employee_payroll VALUES('Madhuri','25000','23-aug-2019','F','9833678
 INSERT INTO employee_payroll VALUES('Tarun','27000','23-feb-2019','M','9833678538',DEFAULT,DEFAULT);
 
 SELECT * FROM EMPLOYEE_PAYROLL;
+
+----------UC9-Extending employee_payroll table----------
+
+ALTER TABLE employee_payroll ADD Basic_Pay varchar(10), Deduction FLOAT(20), Taxable_Pay FLOAT(20), Income_Tax Float(20), Net_Pay float(20);
+SELECT * FROM EMPLOYEE_PAYROLL;
