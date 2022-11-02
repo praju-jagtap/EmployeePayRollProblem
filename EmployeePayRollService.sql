@@ -29,3 +29,13 @@ SELECT * FROM EMPLOYEE_PAYROLL;
 
 select Salary from employee_payroll where Name='Nilima';
 select * from employee_payroll where StartDate between cast('1-apr-2019' as date) and cast(getdate() as date);
+
+------------UC6-Adding GENDER Column to the Employee_Payroll Table using ALTER keyword-------
+
+ALTER TABLE employee_payroll ADD Gender CHAR(1);
+
+------------Updating Gender using UPDATE keyword--------------
+
+UPDATE employee_payroll SET Gender='M' WHERE Name='himanshu'or Name='Priyanshu';
+UPDATE employee_payroll SET Gender='F' WHERE Name='Prajakta' or Name= 'Nilima' or Name= 'Sayali';
+SELECT * FROM EMPLOYEE_PAYROLL;
