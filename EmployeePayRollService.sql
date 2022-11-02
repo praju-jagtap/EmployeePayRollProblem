@@ -20,3 +20,12 @@ INSERT INTO employee_payroll VALUES('Nilima','44000','12-jan-2010');
 INSERT INTO employee_payroll VALUES('Priyanshu','15000','20-mar-2018');
 INSERT INTO employee_payroll VALUES('Sayali','10000','15-FEB-2010');
 INSERT INTO employee_payroll VALUES('himanshu','50000','13-apr-2025');
+
+---------UC4-Retrieving all the Tables value--------------
+
+SELECT * FROM EMPLOYEE_PAYROLL;
+
+-----------------UC5-Retrieve salary data for a particular employee---------
+
+select Salary from employee_payroll where Name='Nilima';
+select * from employee_payroll where StartDate between cast('1-apr-2019' as date) and cast(getdate() as date);
